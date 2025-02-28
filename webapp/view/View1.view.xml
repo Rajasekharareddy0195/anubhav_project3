@@ -1,0 +1,50 @@
+<mvc:View controllerName="jnj.rsc.workorder.project3.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <Text id="text1" text="Hello Raja..."></Text>
+    <Button id="btn1" text="GO TO" press="onToGo"></Button>
+    <!-- <List id="myList">
+    <items>
+    <DisplayListItem id="myDisplay" label="Apple" value="antibiotics"></DisplayListItem>
+    <StandardListItem id="myStandrd" title="pineapple" description="Pineapple" icon="https://www.kroger.com/product/images/large/front/0000000004430"></StandardListItem>
+    <InputListItem id="myInputList">
+    <content>
+    <HBox id="hbox">
+    <Label id="contentLbl"  text="How many mangos you want"></Label>
+    <Input id="contentInput"></Input>
+    </HBox>
+    
+    </content>
+    </InputListItem>
+    <CustomListItem id="myCustomList">
+    <content>
+     <HBox id="hbox1">
+    <Label id="contentLbl1"  text="Do you want cash on delivery"></Label>
+    <Switch id="mySwith"></Switch>
+    </HBox>
+    </content>
+    </CustomListItem>
+    <ObjectListItem id="myObjectList" title="Banana" intro="Best of fruits" number="20" numberUnit="kg" icon="https://images.immediate.co.uk/production/volatile/sites/30/2017/01/Bunch-of-bananas-67e91d5.jpg">
+    <attributes>
+    <ObjectAttribute id="myObjectAttribute" title="Colour"  text="Green Yellow"></ObjectAttribute>
+     <ObjectAttribute id="myObjectAttribute1" title="Type"  text="Rich"></ObjectAttribute>
+    </attributes>
+    <firstStatus>
+				<ObjectStatus id="onjStatus" text="Available" state="Success" />
+	</firstStatus>
+    </ObjectListItem>
+    <FeedListItem id="myFeedList" text="How are you ..!" timestamp="26/02/2025" sender="Rajasekhara" icon="https://upload.wikimedia.org/wikipedia/commons/9/9b/Virat_Kohli_in_PMO_New_Delhi.jpg"></FeedListItem>
+   <ActionListItem id="myAction" text="Order Now" press="onToGo"></ActionListItem>
+    </items>
+    </List> -->
+    <SearchField id="mySearchFiledId" search="onSearch"></SearchField>
+    <!-- <List id="fruitsList" items="{path : '/fruits' , sorter :{path: 'name'}}"  mode="Delete" delete="onDelete" itemPress="onItemPress"> -->
+       <List id="fruitsList" items="{path : '/fruits' , sorter :{path: 'name'}}"  mode="SingleSelectMaster"   selectionChange="onItemPress">
+
+    <items>
+    <ObjectListItem id="objListItemId" title="{name}" intro="{type}" number="{price}" numberUnit="{unit}" icon="{image}"></ObjectListItem>
+    </items>
+    </List>
+    </Page>
+</mvc:View>

@@ -1,0 +1,14 @@
+<mvc:View controllerName="jnj.rsc.workorder.project3.controller.App"
+    displayBlock="true"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <SplitApp id="app">
+    
+      <masterPages>
+            <mvc:XMLView id="View1" viewName="jnj.rsc.workorder.project3.view.View1" />
+            
+        </masterPages>
+        <detailPages><mvc:XMLView id="View2" viewName="jnj.rsc.workorder.project3.view.View2" /></detailPages>
+     
+    </SplitApp>
+</mvc:View>

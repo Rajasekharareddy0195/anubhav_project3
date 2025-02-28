@@ -1,0 +1,113 @@
+{
+    "_version": "1.65.0",
+    "sap.app": {
+        "id": "jnj.rsc.workorder.project3",
+        "type": "application",
+        "i18n": "i18n/i18n.properties",
+        "applicationVersion": {
+            "version": "0.0.1"
+        },
+        "title": "{{appTitle}}",
+        "description": "{{appDescription}}",
+        "resources": "resources.json",
+        "sourceTemplate": {
+            "id": "@sap/generator-fiori:basic",
+            "version": "1.16.4",
+            "toolsId": "d78adc98-bcc3-49eb-8b32-791b8e787978"
+        }
+    },
+    "sap.ui": {
+        "technology": "UI5",
+        "icons": {
+            "icon": "",
+            "favIcon": "",
+            "phone": "",
+            "phone@2": "",
+            "tablet": "",
+            "tablet@2": ""
+        },
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": true
+        }
+    },
+    "sap.ui5": {
+        "flexEnabled": true,
+        "dependencies": {
+            "minUI5Version": "1.133.0",
+            "libs": {
+                "sap.m": {},
+                "sap.ui.core": {}
+            }
+        },
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        },
+        "models": {
+            "": {
+                "type": "sap.ui.model.json.JSONModel",
+                "uri": "model/fruits.json",
+                "settings": {}
+            },
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "settings": {
+                    "bundleName": "jnj.rsc.workorder.project3.i18n.i18n"
+                }
+            }
+        },
+        "resources": {
+            "css": [
+                {
+                    "uri": "css/style.css"
+                }
+            ]
+        },
+        "routing": {
+            "config": {
+                "routerClass": "sap.m.routing.Router",
+                "controlAggregation": "pages",
+                "controlId": "app",
+                "transition": "slide",
+                "type": "View",
+                "viewType": "XML",
+                "path": "jnj.rsc.workorder.project3.view",
+                "async": true,
+                "viewPath": "jnj.rsc.workorder.project3.view"
+            },
+            "routes": [
+                {
+                    "name": "RouteView1",
+                    "pattern": ":?query:",
+                    "target": [
+                        "TargetView1"
+                    ]
+                },
+                {
+                    "pattern": "View2",
+                    "name": "RouteView2",
+                    "target": [
+                        "TargetView2"
+                    ]
+                }
+            ],
+            "targets": {
+                "TargetView1": {
+                    "id": "View1",
+                    "name": "View1"
+                },
+                "TargetView2": {
+                    "id": "View2",
+                    "name": "View2"
+                }
+            }
+        },
+        "rootView": {
+            "viewName": "jnj.rsc.workorder.project3.view.App",
+            "type": "XML",
+            "id": "App"
+        }
+    }
+}

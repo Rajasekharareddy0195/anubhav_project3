@@ -1,0 +1,29 @@
+<mvc:View xmlns:form="sap.ui.layout.form" xmlns:f="sap.ui.layout.form" controllerName="jnj.rsc.workorder.project3.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page2" title="Detail Page">
+        <ObjectHeader id="view2ObjHeaderId" title="{name}" intro="{type}" number="{price}" numberUnit="{unit}" icon="{image}"/>
+        <IconTabBar id="iconTabId">
+        <items>
+        <IconTabFilter id="icontabFilter1ID" icon="sap-icon://notes" text="More Info">
+        <f:SimpleForm id="simpleFormId1">
+        <f:content>
+        <Label id="olbl1" text="Name"></Label>
+        <Text id="otxt1" text="{name}"></Text>
+         <Label id="olbl2" text="Type"></Label>
+        <Text id="otxt2" text="{type}"></Text>
+         <Label id="olbl3" text="Colour"></Label>
+        <Text id="otxt3" text="{color}"></Text>
+         <Label id="olbl4" text="Status"></Label>
+        <!-- <ObjectStatus id="objStatusIcon1" text="{status}" state="path: 'status', formatter : '.formatter.getState' "></ObjectStatus> -->
+        <ObjectStatus id="objStatusIcon1" text="{status}" state="{path: 'status', formatter: '.formatter.getState'}" />
+        </f:content>
+        </f:SimpleForm>
+        </IconTabFilter>
+        <IconTabFilter id="icontabFilter2ID" icon="sap-icon://supplier" text="Supplier"></IconTabFilter>
+        <IconTabFilter id="icontabFilter3ID" icon="sap-icon://group" text="Cities"></IconTabFilter>
+
+        </items>
+        </IconTabBar>
+    </Page>
+</mvc:View>

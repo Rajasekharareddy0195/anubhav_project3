@@ -1,0 +1,84 @@
+{
+    "fruits": [
+        {
+            "name": "Apple",
+            "type": "Pome",
+            "color": "Red",
+            "healthBenefits": "Rich in fiber",
+            "price": 2.5,
+            "unit": "per lb",
+            "image": "https://static.wikia.nocookie.net/fruits-information/images/2/2b/Apple.jpg/revision/latest/thumbnail/width/360/height/450?cb=20180802112257",
+            "status": "Available"
+        },
+        {
+            "name": "Banana",
+            "type": "Berry",
+            "color": "Yellow",
+            "healthBenefits": "High in potassium",
+            "price": 1.2,
+            "unit": "per lb",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_4wowvWHIvY4vDIPdAtQe2Ezo8gMnOSfITQ&s",
+            "status": "Available"
+        },
+        {
+            "name": "Orange",
+            "type": "Citrus",
+            "color": "Orange",
+            "healthBenefits": "Rich in vitamin C",
+            "price": 1.8,
+            "unit": "per lb",
+            "image": "https://orchardfruit.com/cdn/shop/files/Navel-Oranges-1-Pcs-The-Orchard-Fruit-72137770_4276x.jpg?v=1722937866",
+            "status": "Out of Stock"
+        },
+        {
+            "name": "Strawberry",
+            "type": "Berry",
+            "color": "Red",
+            "healthBenefits": "High in antioxidants",
+            "price": 3.5,
+            "unit": "per lb",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0gRT71EwtApQ8ACXCGyfvsCkuxwIXsx2z8Q&s",
+            "status": "Available"
+        },
+        {
+            "name": "Grapes",
+            "type": "Berry",
+            "color": "Purple",
+            "healthBenefits": "Good for heart health",
+            "price": 2.8,
+            "unit": "per lb",
+            "image": "https://walnutcreekfarmtexas.com/wp-content/uploads/2021/08/PRODUCT-Fruit-Green-Grapes.jpg",
+            "status": "Available"
+        },
+        {
+            "name": "Watermelon",
+            "type": "Melon",
+            "color": "Green",
+            "healthBenefits": "Hydrating and refreshing",
+            "price": 4.0,
+            "unit": "each",
+            "image": "https://example.com/images/watermelon.jpg",
+            "status": "Not Available"
+        },
+        {
+            "name": "Pineapple",
+            "type": "Tropical",
+            "color": "Yellow",
+            "healthBenefits": "Boosts digestion",
+            "price": 3.0,
+            "unit": "each",
+            "image": "https://example.com/images/pineapple.jpg",
+            "status": "Out of Stock"
+        },
+        {
+            "name": "Mango",
+            "type": "Tropical",
+            "color": "Yellow",
+            "healthBenefits": "Rich in vitamin A",
+            "price": 2.7,
+            "unit": "per lb",
+            "image": "https://example.com/images/mango.jpg",
+            "status": "Available"
+        }
+    ]
+}
